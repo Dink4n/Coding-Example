@@ -1,0 +1,13 @@
+#! /usr/bin/python3
+import sys
+import pyperclip as pc
+import webbrowser as wb
+
+
+if len(sys.argv) > 1:
+    address = ' '.join(sys.argv[1:])
+    wb.open(r"https://www.google.com/maps/place/" + address)
+else:
+    address = pc.paste()
+    wb.open(r"https://www.google.com/maps/place/" + address)
+
