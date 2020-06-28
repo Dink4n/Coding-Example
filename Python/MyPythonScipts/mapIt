@@ -11,3 +11,8 @@ else:
     address = pc.paste()
     wb.open(r"https://www.google.com/maps/place/" + address)
 
+def foo():
+    print"bar"
+
+foo()
+
